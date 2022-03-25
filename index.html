@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-----------------------------------
+            header section starts
+    ------------------------------------>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg main_menu d-none d-lg-block">
+            <div class="container">
+                <a class="navbar-brand logo" href="#">TUTORA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hire Tutor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Become a Tutor</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto menu_btns">
+                        <li class="nav-item"><a href="#" class="nav-link"  data-bs-toggle="modal" data-bs-target="#exampleModal2">Sign In</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link account_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a free account</a></li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+          
+        <!-- side menu starts -->
+        <div class="sidemenu d-lg-none">
+            <span class="bar_btn" style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa-solid fa-bars-staggered"></i></span>
+            <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#banner">Home</a>
+            <a href="#about">About</a>
+            <a href="#feature">Services</a>
+            <a href="#tutora">portfolio</a>
+            <a href="#test">testimonial</a>
+            <a href="#join">faq</a>
+            <a href="#footer">contact me</a>
+            </div>
+        </div>
+        <!-- side menu ends -->
+
+    </header>
+    <!-----------------------------------
+            header section ends
+    ------------------------------------>
+    <!-- sign up modal starts -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="exampleModalLabel">Sign Up</h5> 
+            </div>
+            <div class="modal-body">
+                <div class="input_box">
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="input_box">
+                    <input type="text" placeholder="E-mail">
+                </div>
+                <div class="input_box">
+                    <input type="text" placeholder="Password">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="text-center">
+                    <input type="checkbox">
+                    <span>I need and agree to <a href="#">Terms & Conditions</a></span>
+                </div>
+                <a href="#" class="custom_btn">CREATE ACCOUNT</a>
+                <span>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-dismiss="modal">Sign In</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- sign up modal ends -->
+
+
+    <!-- sign in modal starts -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+            </div>
+            <div class="modal-body">
+                <div class="input_box">
+                    <input type="text" placeholder="User Name">
+                </div>
+                <div class="input_box">
+                    <input type="text" placeholder="Password">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="custom_btn">Log In</a>
+                <span>If you have no account? <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-dismiss="modal">Sign Up</a></span>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- sign in modal ends -->
+
+    <!-- back to top btn starts -->
+    <div class="back_btn">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+    <!-- back to top btn ends -->
+    <div class="preloader js-preloader flex-center">
+        <div class="loader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+      </div>
+    <!-----------------------------------
+            banner section starts
+    ------------------------------------>
+    <section id="banner" style="background: url(images/banner.png) no-repeat center / cover ;">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <div class="ban_text text-center text-lg-start">
+                        <h1>Learn from the best online tutor</h1>
+                        <p>Make your studies and progress much easier by finding the right tutor for you. Our tutor will provide textbook solution, video explanation and practice problems.</p>
+                        <a href="#" class="custom_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-8 col-10 order-1 order-lg-2">
+                    <div class="ban_img wow bounceIn" data-wow-duration="5s" data-wow-delay="9s">
+                        <img src="images/ban-img.png" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------------
+            banner section ends
+    ------------------------------------>
+    <!-----------------------------------
+            about section starts
+    ------------------------------------>
+    <section id="about">
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="about_head text-center mb-5">
+                        <h2 class="mb-2">How <span>tutora</span> works?</h2>
+                        <p>Tutora's tutors give one-on-one classes to students. The student
+                            can communicate like regular class.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center about_content g-xl-5 g-md-4 g-2">
+                <div class="col-lg-3 col-6 mt-4">
+                    <div class="item h-100 p-xl-4 p-md-3 p-2">
+                        <i class="fa-solid fa-magnifying-glass" style="background-color: #FFA80033; color: #FFA800;"></i>
+                        <h5>Search Tutor</h5>
+                        <p>First, find tutor with our advance and filter search feature which can give suggestion near you.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 mt-4">
+                    <div class="item h-100 p-xl-4 p-md-3 p-2">
+                        <i class="fa-solid fa-tower-broadcast" style="background: #FF000033;color: #FF0000C2"></i>
+                        <h5>Study Live</h5>
+                        <p>In live class, the student sees what the tutor is writing and at the same time sees the tutors overall activity</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 mt-4">
+                    <div class="item h-100 p-xl-4 p-md-3 p-2">
+                        <i class="fa-solid fa-file" style="background: #6587FF33; color:#0038FF;"></i>
+                        <h5>Online Assignments</h5>
+                        <p>Tutora assignments feature are a great way to apply your knowledge and improve what you have learned.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 mt-4">
+                    <div class="item h-100 p-xl-4 p-md-3 p-2">
+                        <i class="fa-solid fa-circle-stop" style="background: rgba(127, 48, 255, 0.2); color: #6233A9;"></i>
+                        <h5>Recorded Class</h5>
+                        <p>After the live session we will record and save your class so that, you can watch it later</p>
+                    </div>
+                </div>
+                
+
+                <div class="col-lg-3 col-6 mt-4">
+                    <div class="item h-100 p-xl-4 p-md-3 p-2">
+                        <i class="fa-solid fa-magnifying-glass" style="background-color: #FFA80033; color: #FFA800;"></i>
+                        <h5>Search Tutor</h5>
+                        <p>First, find tutor with our advance and filter search feature which can give suggestion near you.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 mt-4">
+                    <div class="item h-100 p-xl-4 p-md-3 p-2">
+                        <i class="fa-solid fa-tower-broadcast" style="background: #FF000033;color: #FF0000C2"></i>
+                        <h5>Study Live</h5>
+                        <p>In live class, the student sees what the tutor is writing and at the same time sees the tutors overall activity</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 mt-4">
+                    <div class="item h-100 p-xl-4 p-md-3 p-2">
+                        <i class="fa-solid fa-file" style="background: #6587FF33; color:#0038FF;"></i>
+                        <h5>Online Assignments</h5>
+                        <p>Tutora assignments feature are a great way to apply your knowledge and improve what you have learned.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 mt-4">
+                    <div class="item h-100 p-xl-4 p-md-3 p-2">
+                        <i class="fa-solid fa-circle-stop" style="background: rgba(127, 48, 255, 0.2); color: #6233A9;"></i>
+                        <h5>Recorded Class</h5>
+                        <p>After the live session we will record and save your class so that, you can watch it later</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 50px;">
+                <span class="custom_btn load_btn">Load More</span>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------------
+            about section ends
+    ------------------------------------>
+    <!-----------------------------------
+            feature section starts
+    ------------------------------------>
+    <section id="feature">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="feature_text text-white pb-3 text-center text-lg-start">
+                        <h3>Our featured subjects</h3>
+                        <p>We feature all kinds of academic subjects. You can choose multiple subjects for same tutor, with no extra charges</p>
+                        <a href="#" class="custom_btn">See More</a>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row feature_content">
+
+                        <div class="col-lg-4 col-6 my-3">
+                            <div class="fea_item py-4 px-2 h-100">
+                                <div class="icon my-lg-2">
+                                    <img src="https://img.icons8.com/metro/26/ffffff/star.png"/>
+                                </div>
+                                <h4>Astronomy</h4>
+                                <p>Gain extensive knowledge about stars and comets</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-6 my-3">
+                            <div class="fea_item py-4 px-2 h-100">
+                                <div class="icon my-lg-2" style="background-color: #0038FF;">
+                                    <img src="https://img.icons8.com/ios/26/ffffff/physics.png"/>
+                                </div>
+                                <h4>Physics</h4>
+                                <p>Learn the fundamental constituents of the universe</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-6 my-3">
+                            <div class="fea_item py-4 px-2 h-100">
+                                <div class="icon my-lg-2" style="background-color: #50CB93;">
+                                    <img src="https://img.icons8.com/pastel-glyph/26/ffffff/microscope.png"/>
+                                </div>
+                                <h4>Biology</h4>
+                                <p>Study about the “Study of life” and plants</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-6 my-3">
+                            <div class="fea_item py-4 px-2 h-100">
+                                <div class="icon my-lg-2" style="background-color: rgba(255, 0, 0, 0.76);">
+                                    <img src="https://img.icons8.com/external-flat-icons-inmotus-design/26/ffffff/external-en-android-ui-flat-icons-inmotus-design.png"/>
+                                </div>
+                                <h4>English</h4>
+                                <p>Get english language and grammar practice </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-6 my-3">
+                            <div class="fea_item py-4 px-2 h-100">
+                                <div class="icon my-lg-2" style="background-color: #FFA800;">
+                                    <img src="https://img.icons8.com/external-itim2101-fill-itim2101/26/ffffff/external-compass-school-stationery-itim2101-fill-itim2101.png"/>
+                                </div>
+                                <h4>Mathematics</h4>
+                                <p>From algebra to geometry also arithmetic</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-6 my-3">
+                            <div class="fea_item py-4 px-2 h-100">
+                                <div class="icon my-lg-2" style="background-color: #7F30FF;">
+                                    <img src="https://img.icons8.com/external-others-iconmarket/26/ffffff/external-chemistry-back-to-school-others-iconmarket.png"/>
+                                </div>
+                                <h4>Chemistry</h4>
+                                <p>We will help you to learn about “Matter”</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------------
+            feature section ends
+    ------------------------------------>
+    <!-----------------------------------
+            tutora section starts
+    ------------------------------------>
+    <section id="tutora">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6">
+                    <div class="tutora_video">
+                        <img src="images/video.png" alt="" class="w-100">
+                        <a class="my-video-links" data-autoplay="true" data-vbtype="video" href="https://youtu.be/WOJYCpHkPlY"><i class="fa-solid fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="tutora_text text-white ps-xl-4  text-center text-lg-start">
+                        <h2 class="pe-xl-4">Benefits of getting online tutors from tutora</h2>
+                        
+                        <div class="tutura_wraper d-flex flex-column flex-lg-row mt-3 text-center text-lg-start">
+                            <div class="icon me-lg-3">
+                                <img src="https://img.icons8.com/external-konkapp-detailed-outline-konkapp/30/ffffff/external-graduation-cap-back-to-school-konkapp-detailed-outline-konkapp.png"/>
+                            </div>
+                            <div class="text">
+                                <h4>Professional tutors</h4>
+                                <p>At tutora, we take pride in quality tutors. Our tutors are teachers students, or university graduates who are experts in the subject they teach. </p>
+                            </div>
+                        </div>
+
+                        <div class="tutura_wraper d-flex flex-column flex-lg-row mt-3 text-center text-lg-start">
+                            <div class="icon me-lg-3">
+                                <img src="https://img.icons8.com/external-phatplus-solid-phatplus/30/ffffff/external-bank-payment-phatplus-solid-phatplus.png"/>
+                            </div>
+                            <div class="text">
+                                <h4>Time and money saver</h4>
+                                <p>Online learning can save you a alot of money but, give students quality teaching as same as home tutor. </p>
+                            </div>
+                        </div>
+
+                        <div class="tutura_wraper d-flex flex-column flex-lg-row mt-3 text-center text-lg-start">
+                            <div class="icon me-lg-3">
+                                <img src="https://img.icons8.com/ios/30/ffffff/man-raising-hand-icon.png"/>
+                            </div>
+                            <div class="text">
+                                <h4>Ideal for everyone</h4>
+                                <p>Online learning has become very popular just because of how easy and help it is for the student who has some learning problems.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------------
+            tutora section ends
+    ------------------------------------>
+    <!-----------------------------------
+            testimonial section starts
+    ------------------------------------>
+    <section id="test">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6">
+                    <div class="test_head text-center">
+                        <h2>What do our <span>students</span> say about <span>tutora</span> ?</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row main_slider mx-1">
+
+                        <div class="col-lg-12 main_s px-1">
+                            <div class="row slider align-items-center">
+                                <div class="col-sm-5">
+                                    <div class="test_img">
+                                        <img src="images/3.jpg" alt="" class="w-100">
+                                    </div>
+                                </div>
+                                <div class="col-sm-7">
+                                    <div class="test_text">
+                                        <p>
+                                            I used to have problems with learning and my home tutor wasn't very good. I tried TUTORA and it was one of the best decision of My life. Now, I take my online lesson for all subject by professional
+                                        </p>
+                                        <span>Thank you again, Tutora.</span>
+                                        <h4>Jacob Jones</h4>
+                                        <span>Student</span>
+                                        <p>John Doe University</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 main_s px-1">
+                            <div class="row slider align-items-center">
+                                <div class="col-sm-5">
+                                    <div class="test_img">
+                                        <img src="images/2.jpg" alt="" class="w-100">
+                                    </div>
+                                </div>
+                                <div class="col-sm-7">
+                                    <div class="test_text">
+                                        <p>
+                                            I used to have problems with learning and my home tutor wasn't very good. I tried TUTORA and it was one of the best decision of My life. Now, I take my online lesson for all subject by professional
+                                        </p>
+                                        <span>Thank you again, Tutora.</span>
+                                        <h4>Jacob Jones</h4>
+                                        <span>Student</span>
+                                        <p>John Doe University</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 main_s px-1">
+                            <div class="row slider align-items-center">
+                                <div class="col-sm-5">
+                                    <div class="test_img">
+                                        <img src="images/6.jpg" alt="" class="w-100">
+                                    </div>
+                                </div>
+                                <div class="col-sm-7">
+                                    <div class="test_text">
+                                        <p>
+                                            I used to have problems with learning and my home tutor wasn't very good. I tried TUTORA and it was one of the best decision of My life. Now, I take my online lesson for all subject by professional
+                                        </p>
+                                        <span>Thank you again, Tutora.</span>
+                                        <h4>Jacob Jones</h4>
+                                        <span>Student</span>
+                                        <p>John Doe University</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------------
+            testimonial section ends
+    ------------------------------------>
+    <div class="join">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row align-items-center join_inner">
+                        <div class="col-lg-9 text-white text-center text-lg-start">
+                            <h2>Ready To Start Tutora?</h2>
+                            <p>By clicking “JOIN” button study with more than 10000+ Student with unlimited  support and assistant. We will help you to be prepared for your next exam.</p>
+                        </div>
+                        <div class="col-lg-3 text-center">
+                            <a href="#" class="custom_btn">JOIN NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="item1 text-white">
+                        <h3>TUTORA</h3>
+                        <p><a href="#">25, Adam Street, Park Avenue</a></p>
+                        <p><a href="#">Dhaka - 26002</a></p>
+                        <p><a href="#">+880123456789</a></p>
+                        <p><a href="#">tutora@mail.com</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="item1 text-white">
+                        <h3>Support</h3>
+                        <p><a href="#">Help center</a></p>
+                        <p><a href="#">Contact</a></p>
+                        <p><a href="#">Account</a></p>
+                        <p><a href="#">Services</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="item1 text-white">
+                        <h3>Important Topic</h3>
+                        <p><a href="#">Blog</a></p>
+                        <p><a href="#">FAQ</a></p>
+                        <p><a href="#">Privecy Policy</a></p>
+                        <p><a href="#">Terms & Conditions</a></p>
+                        <p><a href="#">Cookies Policy</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="item1 text-white">
+                        <h3>About Us</h3>
+                        <p><a href="#">Our Story</a></p>
+                        <p><a href="#">Missions</a></p>
+                        <p><a href="#">Careers</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+            // preloader 
+
+    $(window).load(function(){
+        $(".preloader").delay(4000).fadeOut(500);
+      })
+    </script>
+    <script>
+        $(".item").slice(0,4).show()
+        $(".load_btn").on("click",function(){
+            $(".item:hidden").slice(0,4).slideDown()
+        })
+    </script>
+        <script>
+            // side menu starts
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+    
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+            // side menu ends
+        </script>
+        
+</body>
+</html>

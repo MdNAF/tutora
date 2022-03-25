@@ -1,0 +1,111 @@
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {  
+    /* bannner part starts */
+    #banner{
+        padding: 60px 0 80px;
+    }
+    #banner .ban_text h1{
+        font-size: 36px;
+        color: #fff;
+        font-weight: 800;
+        line-height: 40px; 
+    }
+    #banner .ban_text p{
+        color: #fff;
+        margin: 15px 0;
+        max-width: 500px;
+        line-height: 20px;
+    }
+    /* bannner part ends */
+    /* about part starts */
+    #about .about_content .item p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    /* about part ends */
+    /* tutora part starts */
+    #tutora{
+        padding: 200px 0;
+        margin: 100px 0;
+        background-color: #7F30FF;
+        clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+    }
+    /* tutora part ends */
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {  
+    /* bannner part starts */
+    #banner{
+        padding: 60px 0 80px;
+    }
+    #banner .ban_text h1{
+        font-size: 36px;
+        color: #fff;
+        font-weight: 800;
+        line-height: 40px; 
+    }
+    #banner .ban_text p{
+        color: #fff;
+        margin: 15px 0;
+        max-width: 500px;
+        line-height: 20px;
+    }
+    /* bannner part ends */
+    /* tutora part starts */
+    #tutora{
+        padding: 200px 0;
+        margin: 100px 0;
+        background-color: #7F30FF;
+        clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+    }
+    /* tutora part ends */
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {  
+    /* bannner part starts */
+    #banner{
+        padding: 60px 0 80px;
+    }
+    #banner .ban_text h1{
+        font-size: 36px;
+        color: #fff;
+        font-weight: 800;
+        line-height: 40px; 
+    }
+    #banner .ban_text p{
+        color: #fff;
+        margin: 15px 0;
+        max-width: 500px;
+        line-height: 20px;
+        margin: 0 auto;
+    }
+    /* bannner part ends */
+    /* tutora part starts */
+    #tutora{
+        padding: 200px 0;
+        margin: 100px 0;
+        background-color: #7F30FF;
+        clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+    }
+    /* tutora part ends */
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {  
+    /* bannner part starts */
+    #banner {
+        padding: 110px 0 8px;
+    }
+    #banner .ban_text h1 {
+        font-size: 56px;
+        line-height: 56px;
+    }
+    /* bannner part ends */
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {  
+    
+}
